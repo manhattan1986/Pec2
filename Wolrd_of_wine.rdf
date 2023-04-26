@@ -1,0 +1,855 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine/"
+     xml:base="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:Wolrd_of_wine="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine">
+        <dc:license>https://creativecommons.org/licenses/by/4.0</dc:license>
+        <rdfs:comment xml:lang="author: jose antonio prado fernández"></rdfs:comment>
+        <rdfs:comment>PEC 2 - Wine ontology</rdfs:comment>
+        <rdfs:label>Wine ontology</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/license"/>
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#sameAs -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#sameAs"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#from_Winery -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#from_Winery">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Wine"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Winery"/>
+        <rdfs:comment>Winery producer of wine</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#has_Awards -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#has_Awards">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Wine"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Award"/>
+        <rdfs:comment>If wine won awards</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#has_Grape -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#has_Grape">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Wine"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Grape"/>
+        <rdfs:comment>Grape type used to made the wine</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#has_Region -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#has_Region">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Winery"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Region"/>
+        <rdfs:comment>Winery region</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#has_Acidity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#has_Acidity">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Acidity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment>Acidity</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#has_Alcochol -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#has_Alcochol">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Alcohol"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment>Alcohol volume %</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#has_Price -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#has_Price">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Price"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment>Wine price</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#has_Year -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#has_Year">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Wine"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>Elaboration year</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Acidity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Acidity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Wine_descriptor"/>
+        <rdfs:comment>Acidity of wine</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Alcohol -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Alcohol">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Wine_descriptor"/>
+        <rdfs:comment>Alcohol volume</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Award -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Award">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Wine_descriptor"/>
+        <rdfs:comment>Award winned by a wine</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Barrel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Barrel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Wine_descriptor"/>
+        <rdfs:comment>Barrel type used to wine elaboration</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Body -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Body">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Wine_descriptor"/>
+        <rdfs:comment>Body of the wine (intensity and other characteristics)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Cheap_price -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Cheap_price">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Price"/>
+        <rdfs:comment>Cheap price</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Country -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Country">
+        <rdfs:comment>Country of wine</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Expensive_price -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Expensive_price">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Price"/>
+        <rdfs:comment>Expensive price</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Format -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Format">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Wine"/>
+        <rdfs:comment>Format</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Grape -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Grape">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Wine_descriptor"/>
+        <Wolrd_of_wine:sameAs>https://dbpedia.org/page/Category:Grape_varieties</Wolrd_of_wine:sameAs>
+        <rdfs:comment>Grape type</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#High_acidity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#High_acidity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Acidity"/>
+        <rdfs:comment>High acidity</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Low_acidity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Low_acidity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Acidity"/>
+        <rdfs:comment>Low acidity</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Medium_acidity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Medium_acidity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Acidity"/>
+        <rdfs:comment>Medium acidity</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Num_reviews -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Num_reviews">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Wine_descriptor"/>
+        <rdfs:comment>Number of reviews</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Price -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Price">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Wine"/>
+        <rdfs:comment>Price of wine</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Rating -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Rating">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Wine_descriptor"/>
+        <rdfs:comment>Rating for a wine</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Red_wine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Red_wine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Wine"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Rose_wine"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#White_wine"/>
+        <Wolrd_of_wine:sameAs>https://dbpedia.org/page/Red_wine</Wolrd_of_wine:sameAs>
+        <rdfs:comment>Red wine type</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Region -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Region">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Country"/>
+        <rdfs:comment>Region in a country</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Regular_price -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Regular_price">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Price"/>
+        <rdfs:comment>Middle price</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Rose_wine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Rose_wine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Wine"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#White_wine"/>
+        <Wolrd_of_wine:sameAs>https://dbpedia.org/page/Rosé</Wolrd_of_wine:sameAs>
+        <rdfs:comment>Rosé wine type</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Type -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Type">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Wine_descriptor"/>
+        <rdfs:comment>Type of wine (Tempranillo, Ribera del Duero, Rioja...)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#White_wine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#White_wine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Wine"/>
+        <Wolrd_of_wine:sameAs>https://dbpedia.org/page/White_wine</Wolrd_of_wine:sameAs>
+        <rdfs:comment>White wine type</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Wine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Wine">
+        <rdfs:comment>Wine class</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Wine_descriptor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Wine_descriptor">
+        <rdfs:comment>Class for group descriptive elements of a wine</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Winery -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Winery">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Region"/>
+        <rdfs:comment>Place where wine is produced</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Year -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Year">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Wine_descriptor"/>
+        <rdfs:comment>Year of elaboration</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Decanter_wordl_wine_awards -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Decanter_wordl_wine_awards">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Award"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Familia_Torres -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Familia_Torres">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Winery"/>
+        <rdfs:comment>Winery</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Ribera_del_Duero -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Ribera_del_Duero">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Region"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#San_Valentín_Parellada -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#San_Valentín_Parellada">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Red_wine"/>
+        <Wolrd_of_wine:has_Acidity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.0</Wolrd_of_wine:has_Acidity>
+        <Wolrd_of_wine:has_Price rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.95</Wolrd_of_wine:has_Price>
+        <Wolrd_of_wine:has_Year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2019</Wolrd_of_wine:has_Year>
+        <rdfs:comment>Regular acidity</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Unico -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Unico">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Red_wine"/>
+        <Wolrd_of_wine:has_Acidity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">8.0</Wolrd_of_wine:has_Acidity>
+        <Wolrd_of_wine:has_Price rdf:datatype="http://www.w3.org/2001/XMLSchema#float">324.95</Wolrd_of_wine:has_Price>
+        <Wolrd_of_wine:has_Year rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2009</Wolrd_of_wine:has_Year>
+    </owl:NamedIndividual>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NegativePropertyAssertion"/>
+        <owl:sourceIndividual rdf:resource="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Unico"/>
+        <owl:assertionProperty rdf:resource="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#from_Winery"/>
+        <owl:targetIndividual rdf:resource="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Vega_Sicilia"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NegativePropertyAssertion"/>
+        <owl:sourceIndividual rdf:resource="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Unico"/>
+        <owl:assertionProperty rdf:resource="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#has_Awards"/>
+        <owl:targetIndividual rdf:resource="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Decanter_wordl_wine_awards"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Vega_Sicilia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Vega_Sicilia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Winery"/>
+    </owl:NamedIndividual>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NegativePropertyAssertion"/>
+        <owl:sourceIndividual rdf:resource="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Vega_Sicilia"/>
+        <owl:assertionProperty rdf:resource="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#has_Region"/>
+        <owl:targetIndividual rdf:resource="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Ribera_del_Duero"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine/w">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine/p">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine/hp">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#a">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#w">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>S3</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Wine"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine/w"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#has_Price"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine/w"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine/hp"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine/hp"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Expensive_price"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine/w"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>S4</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Wine"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine/w"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#has_Price"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine/w"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine/hp"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine/hp"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Cheap_price"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine/w"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                        <swrl:arguments>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first rdf:resource="urn:swrl:var#a"/>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Wine"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#w"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#has_Acidity"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#w"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl:var#a"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Low_acidity"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#w"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>S2</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Wine"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine/w"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Price"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine/p"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine/p"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Expensive_price"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine/w"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#Wine"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#w"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                                <swrl:arguments>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first rdf:resource="urn:swrl:var#a"/>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.5</rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </swrl:arguments>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#has_Acidity"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#w"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl:var#a"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_of_wine#High_acidity"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#w"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+

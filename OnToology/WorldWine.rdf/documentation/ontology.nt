@@ -1,9 +1,9 @@
 <http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine> <http://www.w3.org/2002/07/owl#versionIRI> <http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine> .
+<http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine> <http://purl.org/dc/elements/1.1/description> "PEC 2: A wine ontology"@en .
 <http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine> <http://purl.org/dc/elements/1.1/license> "https://creativecommons.org/licenses/by/4.0" .
-<http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine> <http://purl.org/dc/elements/1.1/title> "World of wines ontology" .
-<http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine> <http://www.w3.org/2000/01/rdf-schema#comment> "@autor: Jose Antonio Prado Fernandez" .
-<http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine> <http://www.w3.org/2000/01/rdf-schema#comment> "PEC 2 - Wine ontology" .
+<http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine> <http://purl.org/dc/elements/1.1/title> "World of wines ontology"@en .
+<http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine> <http://www.w3.org/2002/07/owl#versionInfo> "1.1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
 # 
 # 
 # #################################################################
@@ -12,6 +12,9 @@
 # #
 # #################################################################
 # 
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://purl.org/dc/elements/1.1/license
 <http://purl.org/dc/elements/1.1/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .

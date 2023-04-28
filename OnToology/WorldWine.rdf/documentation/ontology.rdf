@@ -1,7 +1,6 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine#"
      xml:base="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine"
-     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -12,10 +11,11 @@
      xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
      xmlns:Wolrd_wine="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine">
-        <dc:license>https://creativecommons.org/licenses/by/4.0</dc:license>
+        <owl:versionIRI rdf:resource="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine/1.0.0"/>
         <rdfs:comment>@autor: Jose Antonio Prado Fernandez</rdfs:comment>
         <rdfs:comment>PEC 2 - Wine ontology</rdfs:comment>
         <rdfs:label>Wine ontology</rdfs:label>
+        <rdfs:label>World_wine</rdfs:label>
     </owl:Ontology>
     
 
@@ -29,13 +29,6 @@
      -->
 
 
-    
-
-
-    <!-- http://purl.org/dc/elements/1.1/license -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/license"/>
     
 
 

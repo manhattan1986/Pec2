@@ -10,14 +10,15 @@
      xmlns:swrl="http://www.w3.org/2003/11/swrl#"
      xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
      xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:terms="http://purl.org/dc/terms/"
      xmlns:Wolrd_wine="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine">
         <owl:versionIRI rdf:resource="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine/1.0.0"/>
-        <dc:title>Wolrd_wine</dc:title>
+        <terms:title>1.0.0</terms:title>
+        <terms:title>World of wine</terms:title>
         <rdfs:comment>@autor: Jose Antonio Prado Fernandez</rdfs:comment>
         <rdfs:comment>PEC 2 - Wine ontology</rdfs:comment>
         <rdfs:label>Wine ontology</rdfs:label>
-        <rdfs:label>World_wine</rdfs:label>
     </owl:Ontology>
     
 
@@ -39,6 +40,12 @@
     
 
 
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
     <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
 
     <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
@@ -48,6 +55,12 @@
     <!-- http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine#sameAs -->
 
     <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine#sameAs"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#versionIRI -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionIRI"/>
     
 
 

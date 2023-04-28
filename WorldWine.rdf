@@ -19,7 +19,10 @@
         <dc:license>https://creativecommons.org/licenses/by/4.0</dc:license>
         <dc:title xml:lang="en">World of wines ontology</dc:title>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.1</owl:versionInfo>
-        <foaf:Person>Jose</foaf:Person>
+		
+		
+		<terms:creator rdf:resource="Jose"/>
+		<terms:title xml:lang="en">World of wines ontology</terms:title>
     </owl:Ontology>
     
 

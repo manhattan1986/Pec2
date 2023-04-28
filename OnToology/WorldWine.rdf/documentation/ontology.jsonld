@@ -367,6 +367,9 @@
     "@id" : "http://www.w3.org/2003/11/swrlb#greaterThan"
   } ]
 }, {
+  "@id" : "http://purl.org/dc/elements/1.1/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://purl.org/dc/elements/1.1/description",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -403,8 +406,6 @@
   "http://purl.org/dc/elements/1.1/title" : [ {
     "@language" : "en",
     "@value" : "World of wines ontology"
-  }, {
-    "@value" : "Title!!"
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
     "@id" : "http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine"
@@ -412,6 +413,9 @@
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
     "@value" : "1.1"
+  } ],
+  "http://xmlns.com/foaf/0.1/Person" : [ {
+    "@value" : "Jose"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine#Acidity",
@@ -829,6 +833,12 @@
 }, {
   "@id" : "http://www.w3.org/2003/11/swrlb#lessThan",
   "@type" : [ "http://www.w3.org/2003/11/swrl#Builtin" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/Person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/elements/1.1/creator"
+  } ]
 }, {
   "@id" : "urn:swrl:var#a",
   "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]

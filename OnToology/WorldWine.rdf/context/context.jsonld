@@ -50,11 +50,17 @@
       "@id" : "http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine#has_Alcochol",
       "@type" : "http://www.w3.org/2001/XMLSchema#float"
     },
+    "Person" : {
+      "@id" : "http://xmlns.com/foaf/0.1/Person"
+    },
     "Award" : {
       "@id" : "http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine#Award"
     },
     "Price" : {
       "@id" : "http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine#Price"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/elements/1.1/creator"
     },
     "Num_reviews" : {
       "@id" : "http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine#Num_reviews"

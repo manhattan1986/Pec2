@@ -3,6 +3,7 @@
 <http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine> <http://purl.org/dc/elements/1.1/description> "PEC 2: A wine ontology"@en .
 <http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine> <http://purl.org/dc/elements/1.1/license> "https://creativecommons.org/licenses/by/4.0" .
 <http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine> <http://purl.org/dc/elements/1.1/title> "World of wines ontology"@en .
+<http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine> <http://purl.org/dc/elements/1.1/title> "Title!!" .
 <http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine> <http://www.w3.org/2002/07/owl#versionInfo> "1.1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
 # 
 # 
@@ -21,6 +22,9 @@
 # 
 # http://purl.org/dc/elements/1.1/title
 <http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .

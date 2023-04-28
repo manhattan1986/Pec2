@@ -10,7 +10,8 @@
                                                                 owl:versionIRI <http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine> ;
                                                                 <http://purl.org/dc/elements/1.1/description> "PEC 2: A wine ontology"@en ;
                                                                 <http://purl.org/dc/elements/1.1/license> "https://creativecommons.org/licenses/by/4.0" ;
-                                                                <http://purl.org/dc/elements/1.1/title> "World of wines ontology"@en ;
+                                                                <http://purl.org/dc/elements/1.1/title> "World of wines ontology"@en ,
+                                                                                                        "Title!!" ;
                                                                 owl:versionInfo 1.1 .
 
 #################################################################
@@ -27,6 +28,10 @@
 
 ###  http://purl.org/dc/elements/1.1/title
 <http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
 
 
 ###  http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled

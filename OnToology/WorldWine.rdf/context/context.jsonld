@@ -1,0 +1,129 @@
+{
+  "@context" : {
+    "has_Year" : {
+      "@id" : "http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine#has_Year",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "Winery" : {
+      "@id" : "http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine#Winery"
+    },
+    "Alcohol" : {
+      "@id" : "http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine#Alcohol"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/elements/1.1/license"
+    },
+    "Country" : {
+      "@id" : "http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine#Country"
+    },
+    "Type" : {
+      "@id" : "http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine#Type"
+    },
+    "Low_acidity" : {
+      "@id" : "http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine#Low_acidity"
+    },
+    "isRuleEnabled" : {
+      "@id" : "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"
+    },
+    "Body" : {
+      "@id" : "http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine#Body"
+    },
+    "White_wine" : {
+      "@id" : "http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine#White_wine"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "Wine_descriptor" : {
+      "@id" : "http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine#Wine_descriptor"
+    },
+    "Format" : {
+      "@id" : "http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine#Format"
+    },
+    "Red_wine" : {
+      "@id" : "http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine#Red_wine"
+    },
+    "has_Alcochol" : {
+      "@id" : "http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine#has_Alcochol",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "Award" : {
+      "@id" : "http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine#Award"
+    },
+    "Price" : {
+      "@id" : "http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine#Price"
+    },
+    "Num_reviews" : {
+      "@id" : "http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine#Num_reviews"
+    },
+    "Rose_wine" : {
+      "@id" : "http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine#Rose_wine"
+    },
+    "from_Winery" : {
+      "@id" : "http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine#from_Winery",
+      "@type" : "@id"
+    },
+    "Grape" : {
+      "@id" : "http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine#Grape"
+    },
+    "High_acidity" : {
+      "@id" : "http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine#High_acidity"
+    },
+    "Rating" : {
+      "@id" : "http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine#Rating"
+    },
+    "Barrel" : {
+      "@id" : "http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine#Barrel"
+    },
+    "Expensive_price" : {
+      "@id" : "http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine#Expensive_price"
+    },
+    "Regular_price" : {
+      "@id" : "http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine#Regular_price"
+    },
+    "Acidity" : {
+      "@id" : "http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine#Acidity"
+    },
+    "Year" : {
+      "@id" : "http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine#Year"
+    },
+    "Medium_acidity" : {
+      "@id" : "http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine#Medium_acidity"
+    },
+    "has_Awards" : {
+      "@id" : "http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine#has_Awards",
+      "@type" : "@id"
+    },
+    "sameAs" : {
+      "@id" : "http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine#sameAs"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "has_Region" : {
+      "@id" : "http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine#has_Region",
+      "@type" : "@id"
+    },
+    "has_Price" : {
+      "@id" : "http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine#has_Price",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "Region" : {
+      "@id" : "http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine#Region"
+    },
+    "has_Acidity" : {
+      "@id" : "http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine#has_Acidity",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "Cheap_price" : {
+      "@id" : "http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine#Cheap_price"
+    },
+    "has_Grape" : {
+      "@id" : "http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine#has_Grape",
+      "@type" : "@id"
+    },
+    "Wine" : {
+      "@id" : "http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine#Wine"
+    }
+  }
+}

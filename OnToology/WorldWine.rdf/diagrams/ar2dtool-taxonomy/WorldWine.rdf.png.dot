@@ -1,0 +1,29 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "Wolrd_wine:Num_reviews" "Wolrd_wine:Year" "Wolrd_wine:Rating" "Wolrd_wine:White_wine" "Wolrd_wine:Format" "Wolrd_wine:Wine" "Wolrd_wine:Body" "Wolrd_wine:Award" "Wolrd_wine:Grape" "Wolrd_wine:Expensive_price" "Wolrd_wine:High_acidity" "Wolrd_wine:Wine_descriptor" "Wolrd_wine:Winery" "Wolrd_wine:Acidity" "Wolrd_wine:Price" "Wolrd_wine:Alcohol" "Wolrd_wine:Rose_wine" "Wolrd_wine:Cheap_price" "Wolrd_wine:Country" "Wolrd_wine:Low_acidity" "Wolrd_wine:Regular_price" "Wolrd_wine:Barrel" "Wolrd_wine:Type" "Wolrd_wine:Region" "Wolrd_wine:Red_wine" "Wolrd_wine:Medium_acidity" ; /*classes style*/
+	"Wolrd_wine:Barrel" -> "Wolrd_wine:Wine_descriptor" [ label = "rdfs:subClassOf" ];
+	"Wolrd_wine:Alcohol" -> "Wolrd_wine:Wine_descriptor" [ label = "rdfs:subClassOf" ];
+	"Wolrd_wine:High_acidity" -> "Wolrd_wine:Acidity" [ label = "rdfs:subClassOf" ];
+	"Wolrd_wine:Medium_acidity" -> "Wolrd_wine:Acidity" [ label = "rdfs:subClassOf" ];
+	"Wolrd_wine:Body" -> "Wolrd_wine:Wine_descriptor" [ label = "rdfs:subClassOf" ];
+	"Wolrd_wine:Num_reviews" -> "Wolrd_wine:Wine_descriptor" [ label = "rdfs:subClassOf" ];
+	"Wolrd_wine:White_wine" -> "Wolrd_wine:Wine" [ label = "rdfs:subClassOf" ];
+	"Wolrd_wine:Regular_price" -> "Wolrd_wine:Price" [ label = "rdfs:subClassOf" ];
+	"Wolrd_wine:Year" -> "Wolrd_wine:Wine_descriptor" [ label = "rdfs:subClassOf" ];
+	"Wolrd_wine:Acidity" -> "Wolrd_wine:Wine_descriptor" [ label = "rdfs:subClassOf" ];
+	"Wolrd_wine:Rose_wine" -> "Wolrd_wine:Wine" [ label = "rdfs:subClassOf" ];
+	"Wolrd_wine:Expensive_price" -> "Wolrd_wine:Price" [ label = "rdfs:subClassOf" ];
+	"Wolrd_wine:Grape" -> "Wolrd_wine:Wine_descriptor" [ label = "rdfs:subClassOf" ];
+	"Wolrd_wine:Red_wine" -> "Wolrd_wine:Wine" [ label = "rdfs:subClassOf" ];
+	"Wolrd_wine:Winery" -> "Wolrd_wine:Region" [ label = "rdfs:subClassOf" ];
+	"Wolrd_wine:Region" -> "Wolrd_wine:Country" [ label = "rdfs:subClassOf" ];
+	"Wolrd_wine:Cheap_price" -> "Wolrd_wine:Price" [ label = "rdfs:subClassOf" ];
+	"Wolrd_wine:Price" -> "Wolrd_wine:Wine" [ label = "rdfs:subClassOf" ];
+	"Wolrd_wine:Low_acidity" -> "Wolrd_wine:Acidity" [ label = "rdfs:subClassOf" ];
+	"Wolrd_wine:Type" -> "Wolrd_wine:Wine_descriptor" [ label = "rdfs:subClassOf" ];
+	"Wolrd_wine:Rating" -> "Wolrd_wine:Wine_descriptor" [ label = "rdfs:subClassOf" ];
+	"Wolrd_wine:Format" -> "Wolrd_wine:Wine" [ label = "rdfs:subClassOf" ];
+	"Wolrd_wine:Award" -> "Wolrd_wine:Wine_descriptor" [ label = "rdfs:subClassOf" ];
+
+}

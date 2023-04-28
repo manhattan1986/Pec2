@@ -367,6 +367,9 @@
     "@id" : "http://www.w3.org/2003/11/swrlb#greaterThan"
   } ]
 }, {
+  "@id" : "http://purl.org/dc/elements/1.1/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://purl.org/dc/elements/1.1/license",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -387,19 +390,23 @@
 }, {
   "@id" : "http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@language" : "en",
+    "@value" : "PEC 2: A wine ontology"
+  } ],
   "http://purl.org/dc/elements/1.1/license" : [ {
     "@value" : "https://creativecommons.org/licenses/by/4.0"
   } ],
   "http://purl.org/dc/elements/1.1/title" : [ {
+    "@language" : "en",
     "@value" : "World of wines ontology"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "@autor: Jose Antonio Prado Fernandez"
-  }, {
-    "@value" : "PEC 2 - Wine ontology"
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
     "@id" : "http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "1.1"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine#Acidity",

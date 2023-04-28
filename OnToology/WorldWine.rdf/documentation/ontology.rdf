@@ -13,10 +13,10 @@
      xmlns:Wolrd_wine="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine">
         <owl:versionIRI rdf:resource="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine"/>
+        <dc:description xml:lang="en">PEC 2: A wine ontology</dc:description>
         <dc:license>https://creativecommons.org/licenses/by/4.0</dc:license>
-        <dc:title>World of wines ontology</dc:title>
-        <rdfs:comment>@autor: Jose Antonio Prado Fernandez</rdfs:comment>
-        <rdfs:comment>PEC 2 - Wine ontology</rdfs:comment>
+        <dc:title xml:lang="en">World of wines ontology</dc:title>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.1</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -30,6 +30,13 @@
      -->
 
 
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
     
 
 

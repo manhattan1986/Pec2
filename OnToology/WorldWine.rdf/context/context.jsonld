@@ -4,6 +4,9 @@
       "@id" : "http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine#has_Year",
       "@type" : "http://www.w3.org/2001/XMLSchema#integer"
     },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
     "Winery" : {
       "@id" : "http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine#Winery"
     },
@@ -113,6 +116,9 @@
     },
     "Region" : {
       "@id" : "http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine#Region"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/elements/1.1/description"
     },
     "has_Acidity" : {
       "@id" : "http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine#has_Acidity",

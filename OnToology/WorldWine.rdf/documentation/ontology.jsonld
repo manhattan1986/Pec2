@@ -370,6 +370,9 @@
   "@id" : "http://purl.org/dc/elements/1.1/title",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -384,8 +387,10 @@
 }, {
   "@id" : "http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
-  "http://purl.org/dc/elements/1.1/title" : [ {
-    "@value" : "Wolrd_wine"
+  "http://purl.org/dc/terms/title" : [ {
+    "@value" : "1.0.0"
+  }, {
+    "@value" : "World of wine"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "@autor: Jose Antonio Prado Fernandez"
@@ -394,8 +399,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Wine ontology"
-  }, {
-    "@value" : "World_wine"
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
     "@id" : "http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine/1.0.0"
@@ -809,6 +812,9 @@
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine#sameAs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owl#versionIRI",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://www.w3.org/2003/11/swrlb#greaterThan",

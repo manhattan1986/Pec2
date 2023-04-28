@@ -8,11 +8,11 @@
 
 <http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine> rdf:type owl:Ontology ;
                                                                 owl:versionIRI <http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine/1.0.0> ;
-                                                                <http://purl.org/dc/elements/1.1/title> "Wolrd_wine" ;
+                                                                <http://purl.org/dc/terms/title> "1.0.0" ,
+                                                                                                 "World of wine" ;
                                                                 rdfs:comment "@autor: Jose Antonio Prado Fernandez" ,
                                                                              "PEC 2 - Wine ontology" ;
-                                                                rdfs:label "Wine ontology" ,
-                                                                           "World_wine" .
+                                                                rdfs:label "Wine ontology" .
 
 #################################################################
 #    Annotation properties
@@ -22,12 +22,20 @@
 <http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
 
 
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
 ###  http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine#sameAs
 :sameAs rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#versionIRI
+owl:versionIRI rdf:type owl:AnnotationProperty .
 
 
 #################################################################

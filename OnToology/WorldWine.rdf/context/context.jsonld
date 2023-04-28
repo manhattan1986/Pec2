@@ -1,5 +1,8 @@
 {
   "@context" : {
+    "versionIRI" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionIRI"
+    },
     "has_Year" : {
       "@id" : "http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine#has_Year",
       "@type" : "http://www.w3.org/2001/XMLSchema#integer"

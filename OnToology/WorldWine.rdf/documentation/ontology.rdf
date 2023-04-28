@@ -18,8 +18,9 @@
         <dc:description xml:lang="en">PEC 2: A wine ontology</dc:description>
         <dc:license>https://creativecommons.org/licenses/by/4.0</dc:license>
         <dc:title xml:lang="en">World of wines ontology</dc:title>
+        <terms:creator rdf:resource="http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine/Jose"/>
+        <terms:title xml:lang="en">World of wines ontology</terms:title>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.1</owl:versionInfo>
-        <foaf:Person>Jose</foaf:Person>
     </owl:Ontology>
     
 
@@ -61,6 +62,13 @@
 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
     
 
 

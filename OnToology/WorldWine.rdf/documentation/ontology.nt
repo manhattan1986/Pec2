@@ -3,8 +3,8 @@
 <http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine> <http://purl.org/dc/elements/1.1/description> "PEC 2: A wine ontology"@en .
 <http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine> <http://purl.org/dc/elements/1.1/license> "https://creativecommons.org/licenses/by/4.0" .
 <http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine> <http://purl.org/dc/elements/1.1/title> "World of wines ontology"@en .
-<http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine> <http://purl.org/dc/elements/1.1/title> "Title!!" .
 <http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine> <http://www.w3.org/2002/07/owl#versionInfo> "1.1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine> <http://xmlns.com/foaf/0.1/Person> "Jose" .
 # 
 # 
 # #################################################################
@@ -13,6 +13,9 @@
 # #
 # #################################################################
 # 
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://purl.org/dc/elements/1.1/description
 <http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -31,6 +34,10 @@
 # 
 # http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine#sameAs
 <http://www.semanticweb.org/jose/ontologies/2023/3/Wolrd_wine#sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/elements/1.1/creator> .
 # 
 # 
 # 
